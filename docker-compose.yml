@@ -1,7 +1,7 @@
 version: "3"
 services:
   gocd-server:
-    image: gocd/gocd-server:v17.12.0
+    build: .
     volumes:
       - ./data/godata:/godata
       - ./data/gocd-server:/home/go gocd/gocd-server
