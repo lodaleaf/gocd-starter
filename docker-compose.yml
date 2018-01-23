@@ -3,8 +3,10 @@ services:
   gocd-server:
     build: .
     volumes:
-      - ./data/godata:/godata
-      - ./data/gocd-server:/home/go gocd/gocd-server
+      - ./data/artifacts:/godata/artifacts
+      - ./data/config:/godata/config
+      - ./data/db:/godata/db
+      - ./data/logs:/godata/logs
     ports:
       - 8153:8153
       - 8154:8154

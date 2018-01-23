@@ -1,1 +1,5 @@
-data/
+data/addons
+data/artifacts
+data/config
+data/db
+data/logs
